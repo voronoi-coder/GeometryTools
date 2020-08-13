@@ -21,7 +21,7 @@ public:
 
     return jni::Local<jni::Array<jni::Object<T>>>(
         env, list.Call(env, toArray).release());
-  };
+  }
 };
 
 class Arrays : private GeometryTools::util::noncopyable {
@@ -55,7 +55,7 @@ public:
 
     return jni::Local<jni::Array<jni::Object<T>>>(
         env, list.Call(env, toArray).release());
-  };
+  }
 };
 
 class Map : private GeometryTools::util::noncopyable {
