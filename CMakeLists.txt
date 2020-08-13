@@ -33,7 +33,7 @@ include_directories(SYSTEM ${MASON_PACKAGE_wagyu_INCLUDE_DIRS})
 mason_use(jni.hpp VERSION 4.0.1 HEADER_ONLY)
 include_directories(SYSTEM ${MASON_PACKAGE_jni.hpp_INCLUDE_DIRS})
 
-add_library(geotools SHARED src/main.cpp src/wagyu.cpp)
+add_library(geotools SHARED src/main.cpp src/wagyu.cpp src/point2d.cpp src/util.cpp)
 target_include_directories(geotools PUBLIC ./include
                             PUBLIC ./openjdk)
 
