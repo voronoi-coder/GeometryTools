@@ -41,5 +41,5 @@ target_include_directories(geotools PUBLIC ./include
 #   SET_TARGET_PROPERTIES(geotools PROPERTIES PREFIX "lib" SUFFIX ".jnilib")
 # endif(APPLE)
 
-add_executable(test test/test.cpp)
+add_executable(test_wagyu test/test.cpp)
 
